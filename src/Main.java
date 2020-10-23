@@ -6,10 +6,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         int stran;
-        for(int i = 0; i < random.nextInt(10000); i++){
+        for(int i = 0; i < 3; i++){
             System.out.println("Zadej hranu " + i + ". krychle.");
             stran = scanner.nextInt();
-            System.out.println("Krychle o hrane " + stran + " ma objem " + Volum.Volum(stran) + "³ a povrch " + Surfes.Surfes(stran) + "².");
+            System.out.println("Krychle o hrane " + stran + " ma objem " + Krychle.Volum(stran) + "³ a povrch " + Krychle.Surfes(stran) + "².");
         }
         System.out.println("Krychle, out.");
 
